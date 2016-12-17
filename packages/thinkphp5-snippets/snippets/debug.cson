@@ -1,0 +1,14 @@
+'.source.php':
+# Debug
+  '变量调试':
+    'prefix': 'Dd'
+    'body': 'Debug::dump(${1:${2:\$var}, ${3:\$echo=true}, ${4:\$label=null}})$0'
+  '性能调试位置':
+    'prefix': 'Dr'
+    'body': 'Debug::remark(${1:\$tag})$0'
+  '性能调试获取运行时间':
+    'prefix': 'Dgt'
+    'body': 'Debug::getRangeTime(${1:\$begin}, ${2:\$end})$0'
+  '性能调试获取内存占用':
+    'prefix': 'Dgm'
+    'body': 'Debug::getRangeMem(${1:\$begin}, ${2:\$end})$0'

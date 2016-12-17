@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+        "spec": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-22703-14t9p5u"
+    ]
+  ],
+  "_from": "../d-1161117-22703-c1szrg/package.tgz",
+  "_id": "atom-react-native-css@1.1.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-react-native-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+    "spec": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-22703-c1szrg/package.tgz",
+  "_shasum": "e4ee88ba4540b5fd1ab88e5469ebeda54c4b515f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-22703-c1szrg/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-22703-14t9p5u",
+  "bugs": {
+    "url": "https://github.com/TOP-Chao/atom-react-native-css/issues"
+  },
+  "dependencies": {
+    "consistent-path": "^2.0.3",
+    "css": "^2.2.1",
+    "glob": "^7.0.3",
+    "minimatch": "^3.0.0",
+    "parse-import": "^2.0.0",
+    "to-camel-case": "^0.2.1"
+  },
+  "description": "Style React-Native components with css and built in support for SASS",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/TOP-Chao/atom-react-native-css#readme",
+  "keywords": [
+    "react-native",
+    "css",
+    "sass",
+    "React Style"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "atom-react-native-css",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# atom-react-native-css package\nReact-native-css turns valid CSS/SASS into the Facebook subset of CSS. <br/> Source:([https://github.com/sabeurthabti/react-native-css](https://github.com/sabeurthabti/react-native-css))\n\n## Install\nUsing `apm`:\n\n```\napm install atom-react-native-css\n```\n\nOr search for `atom-react-native-css` in Atom settings view.\n\n## File support\nBecause `node-sass` installation errors often，Now the default does not support ` sass ` file。\nIf you use the `node-sass` this error:\n```\nAt The `libsass` binding was not found in .... /node-sass/vendor/**/binding.node\n```\n[To download the missing file](https://github.com/sass/node-sass/releases),\nIf you follow the above solutions still wrong, then I am sorry only use css files.\n\n## Alternative to local node-sass installation\nIf using a local `node-sass` package fails for you, you can install `node-sass` globally and enable the **useGlobalSass** option to be able to use .sass files once again.\n\nTake into consideration that this approach will use the same `node-sass` version for all your projects.\n\nTo install `node-sass` globally follow this step:\n\n```bash\n$ npm install -g node-sass\n```\n\n## Newly added\nCan insert JS code: `JS()`<br />\nNew metering unit: `vw`, `vh`, `vmax`, `vmin`, `scale`<br />\n**vw**: device width / 100<br />\n**vh**: device height / 100<br />\n**vmax**: Math.max(vw, vh)<br />\n**vmin**: Math.min(vw, vh)\n\n## Options\n- #### compileCSS\n    Enable compile React Style'\n\n    *Default:* `true`\n\n- #### enableSass\n    Enable Sass file and install node-sass\n\n    *Default:* `false`\n\n- #### useGlobalSass\n    Enables Sass file parsing using a **globally** installed **node-sass** package\n\n    *Default:* `false`\n\n\n- #### Input files\n    Enter the file path or directory. Please read [minimatch](https://github.com/TOP-Chao/atom-file-watchers#minimatch) matching rules\n\n    *Default:* `**/*.@(css|scss|sass)`\n\n\n- #### Output file\n    File output directory. Relative to the path of the input file\n\n    *Default:* `./`\n\n## Example\nGiven the following CSS:\n\n```css\n/* styles.scss */\n$colour-base: #656656;\n.container {\n    flex: 1;\n    padding: 0 0.1vmax;\n    margin: 0 0.2vmin;\n    align-items: center;\n}\n.description {\n    width: \"-.5vw\";\n    height: 50vh;\n    font-size: 18;\n    font-family: ProximaNova-Semibold;\n    text-align: center;\n    color: $colour-base;\n    writing-direction: auto;\n    text-shadow-offset: \"JS({width: 0, height: 0})\";\n    letter-spacing: .7px;\n    margin-top: -20px;\n    font-weight: \"700\";\n}\n.img {\n    margin: 0 1px 2rem 3em;\n    resize-mode: \"JS(React.Image.resizeMode.cover)\";\n}\n```\n\nCSS will generate the following:\n\n```js\n// styles.js\nimport React, {StyleSheet, Dimensions, PixelRatio} from \"react-native\";\nconst {width, height, scale} = Dimensions.get(\"window\"),\n    vw = width / 100,\n    vh = height / 100,\n    vmin = Math.min(vw, vh),\n    vmax = Math.max(vw, vh);\n\nexport default StyleSheet.create({\n    \"container\": {\n        \"flex\": 1,\n        \"paddingTop\": 0,\n        \"paddingRight\": 0.1 * vmax,\n        \"paddingBottom\": 0,\n        \"paddingLeft\": 0.1 * vmax,\n        \"marginTop\": 0,\n        \"marginRight\": 0.2 * vmin,\n        \"marginBottom\": 0,\n        \"marginLeft\": 0.2 * vmin,\n        \"alignItems\": \"center\"\n    },\n    \"description\": {\n        \"width\": -.5 * vw,\n        \"height\": 50 * vh,\n        \"fontSize\": 18,\n        \"fontFamily\": \"ProximaNova-Semibold\",\n        \"textAlign\": \"center\",\n        \"color\": \"#656656\",\n        \"writingDirection\": \"auto\",\n        \"textShadowOffset\": {width: 0, height: 0},\n        \"letterSpacing\": 0.7,\n        \"marginTop\": -20,\n        \"fontWeight\": \"700\"\n    },\n    \"img\": {\n        \"marginTop\": 0,\n        \"marginRight\": 1,\n        \"marginBottom\": 2,\n        \"marginLeft\": 3,\n        \"resizeMode\": React.Image.resizeMode.cover\n    }\n});\n```\n\n## Usage\n\n```js\n// require the generated style file\nvar React = require('react-native'),\n\t{View,Text} = React;\n\nvar styles = require('./styles.js')\n\nvar Component = React.createClass({\n    render: function() {\n        return (\n            <View style={styles.container}>\n              <Text style={styles.description}>\n              yes or no\n              </Text>\n            </View>\n        );\n    }\n})\n```\n## Demo\n\n![demo](http://7oxfk1.com1.z0.glb.clouddn.com/atom-react-native-css-demo.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TOP-Chao/atom-react-native-css.git"
+  },
+  "version": "1.1.3"
+}

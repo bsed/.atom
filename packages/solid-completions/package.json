@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+        "spec": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-4371-158ovkc"
+    ]
+  ],
+  "_from": "../d-1161117-4371-y2ghk5/package.tgz",
+  "_id": "solid-completions@2.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/solid-completions",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+    "spec": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-4371-y2ghk5/package.tgz",
+  "_shasum": "971a2b33413e7cc8493490745a8944eeac93553e",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-4371-y2ghk5/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-4371-158ovkc",
+  "author": {
+    "name": "Mark Shuster",
+    "url": "mark.shuster@buzzfeed.com"
+  },
+  "bugs": {
+    "url": "https://github.com/buzzfeed/solid-completions/issues"
+  },
+  "dependencies": {
+    "contrast": "^1.0.1"
+  },
+  "description": "Atom Autocomplete+ provider and generator for SublimeText completions files for the Solid CSS Framework.",
+  "devDependencies": {
+    "bf-solid": "latest",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-postcss": "^0.7.1",
+    "grunt-sass": "^1.1.0",
+    "handlebars": "^4.0.5",
+    "postcss": "^5.0.14",
+    "postcss-scss": "^0.1.3"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/buzzfeed/solid-completions#readme",
+  "main": "./lib/main.js",
+  "name": "solid-completions",
+  "optionalDependencies": {},
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "readme": "# solid-completions\nAn [Atom](http://www.atom.io) autocomplete provider for the [Solid CSS framework](http://solid.buzzfeed.com) and generator for `.sublime-completions` autocomplete files.\n\nIt will autocomplete your Solid classnames in HTML and HTML-ish (mustache, handlebars, etc) files while also providing access to Solid global variables in SCSS.\n\n![Solid Autocomplete Example](https://monosnap.com/file/biBzhqnrIhT6jC0KA5PweeRTtuwN28.png)\n\n## Installation (Atom)\n\nUse the command palette `cmd-shift-P` and jump to `Settings View: Install Packages and Themes`. Search for `solid-completions` and hit install. That's it!\n\n## Installation (Sublime)\nClone the repo to your machine\n`git clone https://github.com/buzzfeed/solid-completions.git`\n\nInstall the modules\n`npm install`\n\nGenerate the completions files\n`grunt generate`\n\nMove the resulting `.sublime-completions` files to `~/Library/Application Support/Sublime Text 2/Packages/User/`\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buzzfeed/solid-completions.git"
+  },
+  "version": "2.0.0"
+}

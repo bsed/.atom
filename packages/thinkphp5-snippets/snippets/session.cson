@@ -1,0 +1,20 @@
+'.source.php':
+# SESSION
+  '初始化 SESSION':
+    'prefix': 'Si'
+    'body': 'Session::init(${1:\$name})$0'
+  '设置 SESSION':
+    'prefix': 'Ss'
+    'body': 'Session::set(${1:\$name}, ${2:\$value}${3:, ${4:\$prefix}})$0'
+  '获取 SESSION':
+    'prefix': 'Sg'
+    'body': 'Session::get(${1:\$name}${2:, ${3:\$prefix}})$0'
+  '删除 SESSION':
+    'prefix': 'Sd'
+    'body': 'Session::delete(${1:\$name}${2:, ${3:\$prefix}})$0'
+  '判断 SESSION':
+    'prefix': 'Sh'
+    'body': 'Session::has(${1:\$name}${2:, ${3:\$prefix}})$0'
+  '清空 SESSION':
+    'prefix': 'Sc'
+    'body': 'Session::clear(${1:\$value})$0'

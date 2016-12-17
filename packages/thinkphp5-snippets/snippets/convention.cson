@@ -1,0 +1,142 @@
+'.source.php':
+# 管理配置
+# 应用设置
+  '应用模式状态':
+    'prefix': 'app_status'
+    'body': 'app_status'
+  '注册的根命名空间':
+    'prefix': 'root_namespace'
+    'body': 'root_namespace'
+  '扩展配置文件':
+    'prefix': 'extra_config_list'
+    'body': 'extra_config_list'
+  '扩展函数文件':
+    'prefix': 'extra_file_list'
+    'body': 'extra_file_list'
+  '默认输出类型':
+    'prefix': 'default_return_type'
+    'body': 'default_return_type'
+  '默认语言':
+    'prefix': 'default_lang'
+    'body': 'default_lang'
+  'response是否返回方式':
+    'prefix': 'response_return'
+    'body': 'response_return'
+  '默认JSONP格式返回的处理方法':
+    'prefix': 'default_ajax_return'
+    'body': 'default_ajax_return'
+  'response是否返回方式':
+    'prefix': 'default_jsonp_handler'
+    'body': 'default_jsonp_handler'
+  '默认JSONP处理方法':
+    'prefix': 'var_jsonp_handler'
+    'body': 'var_jsonp_handler'
+  '默认时区':
+    'prefix': 'default_timezone'
+    'body': 'default_timezone'
+  '是否开启多语言':
+    'prefix': 'lang_switch_on'
+    'body': 'lang_switch_on'
+  '支持的多语言列表':
+    'prefix': 'lang_list'
+    'body': 'lang_list'
+  '语言变量':
+    'prefix': 'lang_detect_var'
+    'body': 'lang_detect_var'
+  '语言cookie变量':
+    'prefix': 'lang_cookie_var'
+    'body': 'lang_cookie_var'
+  '默认全局过滤方法':
+    'prefix': 'default_filter'
+    'body': 'default_filter'
+  '自动Response输出':
+    'prefix': 'response_auto_output'
+    'body': 'response_auto_output'
+# 模块设置
+  '默认模块名':
+    'prefix': 'default_module'
+    'body': 'default_module'
+  '禁止访问模块':
+    'prefix': 'deny_module_list'
+    'body': 'deny_module_list'
+  '默认控制器名':
+    'prefix': 'default_controller'
+    'body': 'default_controller'
+  '默认操作名':
+    'prefix': 'default_action'
+    'body': 'default_action'
+  '默认验证器':
+    'prefix': 'default_validate'
+    'body': 'default_validate'
+  '默认的空控制器名':
+    'prefix': 'empty_controller'
+    'body': 'empty_controller'
+  '操作方法后缀':
+    'prefix': 'action_suffix'
+    'body': 'action_suffix'
+# URL 设置
+  'PATHINFO变量名':
+    'prefix': 'var_pathinfo'
+    'body': 'var_pathinfo'
+  '兼容PATH_INFO获取':
+    'prefix': 'pathinfo_fetch'
+    'body': 'pathinfo_fetch'
+  'pathinfo分隔符':
+    'prefix': 'pathinfo_depr'
+    'body': 'pathinfo_depr'
+  '获取当前页面地址的系统变量':
+    'prefix': 'url_request_uri'
+    'body': 'url_request_uri'
+  '基础URL路径':
+    'prefix': 'base_url'
+    'body': 'base_url'
+  'URL伪静态后缀':
+    'prefix': 'url_html_suffix'
+    'body': 'url_html_suffix'
+  'URL普通方式参数':
+    'prefix': 'url_common_param'
+    'body': 'url_common_param'
+  'url禁止访问的后缀':
+    'prefix': 'url_deny_suffix'
+    'body': 'url_deny_suffix'
+  '是否开启路由':
+    'prefix': 'url_route_on'
+    'body': 'url_route_on'
+  '是否强制使用路由':
+    'prefix': 'url_route_must'
+    'body': 'url_route_must'
+  'URL模块映射':
+    'prefix': 'url_module_map'
+    'body': 'url_module_map'
+  '域名部署':
+    'prefix': 'url_domain_deploy'
+    'body': 'url_domain_deploy'
+  '域名根':
+    'prefix': 'url_domain_root'
+    'body': 'url_domain_root'
+  '是否自动转换URL中的控制器名':
+    'prefix': 'url_controller_convert'
+    'body': 'url_controller_convert'
+# 视图及模板设置
+  'success 跳转模板':
+    'prefix': 'dispatch_success_tmpl'
+    'body': 'dispatch_success_tmpl'
+  'error 跳转模板':
+    'prefix': 'dispatch_error_tmpl'
+    'body': 'dispatch_error_tmpl'
+#异常及错误设置
+  '异常页面的模板文件':
+    'prefix': 'exception_tmpl'
+    'body': 'exception_tmpl'
+  '异常处理忽略的错误类型':
+    'prefix': 'exception_ignore_type'
+    'body': 'exception_ignore_type'
+  '错误显示信息':
+    'prefix': 'error_message'
+    'body': 'error_message'
+  '错误定向页面':
+    'prefix': 'error_page'
+    'body': 'error_page'
+  '显示错误信息':
+    'prefix': 'show_error_msg'
+    'body': 'show_error_msg'

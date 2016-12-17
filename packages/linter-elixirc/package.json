@@ -1,0 +1,75 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-1248-tt286w/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-1248-tt286w/package.tgz",
+        "spec": "/tmp/d-1161117-1248-tt286w/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-1248-gpa53u"
+    ]
+  ],
+  "_from": "../d-1161117-1248-tt286w/package.tgz",
+  "_id": "linter-elixirc@1.1.11",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-elixirc",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-1248-tt286w/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-1248-tt286w/package.tgz",
+    "spec": "/tmp/d-1161117-1248-tt286w/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-1248-tt286w/package.tgz",
+  "_shasum": "42912d45250a3f4129a036d4bd21ff164eb03ccc",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-1248-tt286w/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-1248-gpa53u",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-elixirc/issues"
+  },
+  "dependencies": {
+    "atom-linter": "^8.0.0",
+    "atom-package-deps": "^4.0.1"
+  },
+  "description": "Bare Minimum Elixir lint package",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/AtomLinter/linter-elixirc#readme",
+  "license": "MIT",
+  "linter-package": true,
+  "main": "./lib/init",
+  "name": "linter-elixirc",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter",
+    "language-elixir"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-elixirc\n\nThis linter plugin for [Linter][linter] provides an interface to elixirc/mix.\nIt will be used with files that have the \"source.elixir\" syntax\n(ie. `*.ex; *.exs`).\n\nThere are limitations with ElixirC that:\n\n-   In case of compilation error, it will only show first error\n-   It does not work with buffers, so linting on fly is disabled\n\n## Installation\n\nPlugin requires Linter package and it should install it by itself.\nIf it did not, please follow Linter instructions [here][linter].\n\n### Method 1: In console\n\n```ShellSession\n$ apm install linter-elixirc\n```\n\n### Method 2: In Atom\n\n1.  Edit > Preferences (Ctrl+,)\n2.  Install > Search \"linter-elixirc\" > Install\n\n## Settings\n\nPlugin should work with default settings. If not:\n\n1.  Edit > Preferences (Ctrl+,)\n\n2.  Packages > Search \"linter-elixirc\" > Settings\n\n3.  `elixirc path` option - use `which elixirc` to find path. ie.\n    `/usr/local/bin/elixirc`\n\n4.  `mix path` option - use `which mix` to find path. ie. `/usr/local/bin/mix`\n\n5.  `always use elixirc` option - leave it disabled, unless `mix compile` is too slow.\n\n## Usage\n\nIf you open folder with mix project (`mix.exs` exists in project's root\nfolder), linter will use `mix compile` to include all dependencies, unless you\nenable \"Always use elixirc\" setting.\n\nIf you open single file, linter will use `elixirc`. This will try to find\ndependencies in a place where mix projects do (\\_build/dev/lib/\\*/ebin). If\ndependency path is different, then every external dependency will trigger\nCompileError.\n\nSince `*.ex` files are not compiled by `mix compile`, they are always linted\nusing `elixirc`.\n\n[linter]: https://github.com/AtomLinter/Linter \"Linter\"\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-elixirc.git"
+  },
+  "version": "1.1.11"
+}

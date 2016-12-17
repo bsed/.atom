@@ -1,0 +1,186 @@
+"*":
+  "advanced-open-file":
+    createFileInstantly: true
+  "atom-autocomplete-php": {}
+  "atom-beautify":
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript: {}
+    cpp: {}
+    cs: {}
+    css:
+      align_assignments: true
+      configPath: "/home/kelvin/.atom/.csscomb.json"
+      default_beautifier: "CSScomb"
+      end_with_newline: true
+      force_indentation: true
+      preserve_newlines: true
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "e9581f26-2e9a-4ea6-8501-99004a36e808"
+    gherkin: {}
+    handlebars: {}
+    html: {}
+    jade: {}
+    java: {}
+    js: {}
+    json: {}
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
+  "atom-css-comb":
+    projectConfigs: "/home/kelvin/.atom/.csscomb.json"
+    readyMadeConfigs: "csscomb"
+  "atom-ctags": {}
+  "atom-minify": {}
+  "auto-copyright":
+    template: '''
+      All source code files and snippets found on this blog, unless otherwise explicitly noted, are licensed under the terms below.
+      Copyright (c) 2001-%y by %o. peaksec@gmail.com All Rights Reserved.
+      Permission is hereby granted, free of charge, to any person
+      obtaining a copy of this software and associated documentation
+      files (the "Software"), to deal in the Software without
+      restriction, including without limitation the rights to use,
+      copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the
+      Software is furnished to do so, subject to the following
+      conditions:
+      The above copyright notice and this permission notice shall be
+      included in all copies or substantial portions of the Software.
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+      OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+      NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+      HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+      WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+      FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+      OTHER DEALINGS IN THE SOFTWARE.
+    '''
+  "autoclose-html": {}
+  "autocomplete-bibtex": {}
+  "autocomplete-python": {}
+  autoprefixer: {}
+  "build-cargo":
+    cargoPath: "/home/kelvin/.cargo/bin/cargo"
+    multiCrateProjects: true
+    verbose: true
+  core:
+    autoHideMenuBar: true
+    automaticallyUpdate: false
+    disabledPackages: [
+      "symbols-view"
+      "markdown-preview"
+      "run-in-browser"
+      "atom-autocomplete-php"
+      "jshint"
+      "linter-jshint"
+      "go-config"
+      "atom-react-native-css"
+      "react"
+      "linter-eslint"
+      "autocomplete-bibtex"
+      "editor-settings"
+      "atom-csscomb"
+    ]
+    themes: [
+      "isotope-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontFamily: '''
+      'Micro Hei Mono','DejaVu Sans Mono', '文泉驿正黑'
+      
+    '''
+    fontSize: 19
+    invisibles:
+      cr: "1"
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "ba23e13f-c1ad-4ef4-ca81-dd401a9525bd"
+  "file-icons":
+    forceShow: true
+  "git-diff": {}
+  "git-log": {}
+  "git-plus":
+    pullBeforePush: "pull"
+  "highlight-selected": {}
+  "isotope-ui":
+    customBackgroundColor: true
+    customBackgroundColorPicker: "#4a4747"
+    lowContrastTooltip: true
+    matchEditorFont: true
+    minimalMode: true
+  linter:
+    showErrorPanel: false
+  "linter-htmlhint": {}
+  "linter-rust":
+    cargoPath: '''
+      /home/kelvin/.cargo/bin/cargo
+      
+    '''
+  "linter-swiftc": {}
+  "markdown-assistant":
+    disableImageUploaderIfNotMarkdown: true
+  "markdown-preview": {}
+  "markdown-writer":
+    fileExtension: ".md"
+  "merge-conflicts": {}
+  minimap:
+    absoluteMode: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "one-light-ui": {}
+  pigments: {}
+  "project-manager":
+    includeGitRepositories: true
+  racer:
+    racerBinPath: "/home/kelvin/.cargo/bin/racer"
+    rustSrcPath: "/home/kelvin/tools/rust/src/"
+    show: "Right"
+  "seti-ui":
+    compactView: true
+    font: "Default Atom Font"
+    themeColor: "Steel"
+  "sync-settings":
+    _analyticsUserId: "466e4438-ddf0-48ea-8744-cca98e35717c"
+    _lastBackupHash: "befe7da5442751a701e87c4a55128b5959cc2f39"
+    gistId: "69e6295f508bd5121979"
+    personalAccessToken: "1a2ac7064e1f786ce88485f1d6d2e26c46a04073"
+  tabs:
+    usePreviewTabs: true
+  "terminal-panel": {}
+  "tool-bar":
+    position: "Left"
+  "tool-bar-almighty": {}
+  welcome:
+    showOnStartup: false
+  whitespace: {}

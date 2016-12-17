@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+        "spec": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-4784-c9x74"
+    ]
+  ],
+  "_from": "../d-1161117-4784-ie7lig/package.tgz",
+  "_id": "thinkphp5-snippets@1.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/thinkphp5-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+    "spec": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-4784-ie7lig/package.tgz",
+  "_shasum": "42565dceabaa7b21adfed0fe4e5d58b985bb471d",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-4784-ie7lig/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-4784-c9x74",
+  "activationCommands": {
+    "atom-workspace": "thinkphp5-snippets:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/chunice/atom-thinkphp5-snippets/issues"
+  },
+  "dependencies": {},
+  "description": "PHP Framework ThinkPHP5 Snippets for Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/chunice/atom-thinkphp5-snippets#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/thinkphp5-snippets",
+  "name": "thinkphp5-snippets",
+  "optionalDependencies": {},
+  "readme": "# thinkphp5-snippets package\n\nThinkPHP 5 代码提醒插件，专门给记不住命名空间又不想使用助手函数的朋友设计的小工具\n\n支持 ThinkPHP 5 的全部常量，配置以及命名空间类库提醒\n\n暂不支持模板内置标签(懒得做)，助手函数提醒(不想做)\n\n反馈邮箱: chun@engineer.com\n\n2016年5月20日于哈尔滨\n\n\n## 安装插件\n```\napm install thinkphp5-snippets\n```\n\n![Package in preview](https://github.com/chunice/atom-thinkphp5-snippets/raw/master/console.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunice/atom-thinkphp5-snippets.git"
+  },
+  "version": "1.0.2"
+}

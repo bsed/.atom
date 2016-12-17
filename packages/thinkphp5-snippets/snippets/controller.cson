@@ -1,0 +1,15 @@
+# ThinkPHP5 控制器片段
+'.source.php':
+    'tp5 创建控制器':
+        'prefix': 'tpc'
+        'body': """
+        namespace app\\\\${1:index}\\\\controller;
+
+        class ${2:New} ${3:extends ${4:\\\\think\\\\Controller}}
+        {
+            public function ${5:index}()
+            {
+                ${6:# code...}
+            }
+        }
+        """

@@ -1,0 +1,5 @@
+'.source.php':
+# URL
+  '生成 URL':
+    'prefix': 'Ub'
+    'body': 'Url::build(${1:\$path}${2:, ${3:\$data}${4:, ${5:\$ext}}});$0'

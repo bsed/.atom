@@ -1,0 +1,12 @@
+# ThinkPHP5 模型片段
+'.source.php':
+    'tp5 创建模型':
+      'prefix': 'tpm'
+      'body': """
+      namespace app\\\\${1:index}\\\\model;
+
+      class ${2:New} ${3:extends ${4:\\\\think\\\\\Model}}
+      {
+          ${5:# code...}
+      }
+      """

@@ -1,0 +1,28 @@
+@import "./child.scss";
+
+$colour-base: #656656;
+.container {
+    flex: 1;
+    padding: 0 0.1vmax;
+    margin: 0 0.2vmin;
+    margin-top: -20;
+    align-items: center;
+    font-weight: "300";
+}
+.description {
+    width: "-.5vw";
+    height: 50vh;
+    font-size: 18;
+    font-family: ProximaNova-Semibold;
+    text-align: center;
+    color: $colour-base;
+    writing-direction: auto;
+    text-shadow-offset: "JS({width: 0, height: 0})";
+    letter-spacing: .7px;
+    margin-top: -20px;
+    font-weight: 700;
+}
+.img {
+    margin: 0 1px 2rem 3em;
+    resize-mode: "JS(React.Image.resizeMode.cover)";
+}

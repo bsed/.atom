@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+        "spec": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-4784-vnruyr"
+    ]
+  ],
+  "_from": "../d-1161117-4784-1nplhzb/package.tgz",
+  "_id": "switch-header-source@0.22.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/switch-header-source",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+    "spec": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-4784-1nplhzb/package.tgz",
+  "_shasum": "4b45a41da9c785ed29b04bf5b71aa671a62ec3de",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-4784-1nplhzb/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-4784-vnruyr",
+  "activationCommands": {
+    "atom-workspace": [
+      "switch-header-source:switch"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/dschwen/switch-header-source/issues"
+  },
+  "dependencies": {
+    "fs-plus": "^2.0.4",
+    "jquery": "^2"
+  },
+  "description": "Quick switching between C/C++/Objective-C header and source files",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.190.0"
+  },
+  "homepage": "https://github.com/dschwen/switch-header-source#readme",
+  "keywords": [
+    "C++",
+    "C",
+    "Objective-C",
+    "Objective-C++",
+    "header",
+    "source",
+    "switch",
+    "navigation"
+  ],
+  "license": "MIT",
+  "main": "./lib/switch-header-source",
+  "name": "switch-header-source",
+  "optionalDependencies": {},
+  "readme": "# switch-header-source package\n\nQuick switching between C, C++, Objective-C, and Objective-C++ header and source\nfiles.\n\n![switching-in-action](http://i.imgur.com/TPJtS1n.gif)\n\n## Mac\nUse ```Ctrl-Option-s``` to switch from a ```.h``` to the corresponding ```.C``` file.\n\n## Linux, Windows\nUse ```Alt-o``` to alternate between a header and its corresponding source file.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschwen/switch-header-source.git"
+  },
+  "version": "0.22.0"
+}

@@ -1,0 +1,29 @@
+'.source.php':
+# Route
+  '定义 GET 路由':
+    'prefix': 'Rog'
+    'body': 'Route::get(${1:\$rule}, ${2:\$route})$0'
+  '定义 POST 路由':
+    'prefix': 'Rop'
+    'body': 'Route::post(${1:\$rule}, ${2:\$route})$0'
+  '定义 PUT 路由':
+    'prefix': 'Roput'
+    'body': 'Route::put(${1:\$rule}, ${2:\$route})$0'
+  '定义 DELETE 路由':
+    'prefix': 'Rod'
+    'body': 'Route::delete(${1:\$rule}, ${2:\$route})$0'
+  '定义所有请求路由':
+    'prefix': 'Roany'
+    'body': 'Route::any(${1:\$rule}, ${2:\$route})$0'
+  '注册路由规则':
+    'prefix': 'Ror'
+    'body': 'Route::rule(${1:\$rule}, ${2:\$route}, ${3:\$type})$0'
+  'URL 映射':
+    'prefix': 'Romap'
+    'body': 'Route::map(${1:\$rule}, ${2:\$route})$0'
+  '快捷路由':
+    'prefix': 'Roa'
+    'body': 'Route::alias(${1:\$controller}, ${2:\$route})$0'
+  '路由分组':
+    'prefix': 'Rogroup'
+    'body': 'Route::group(${1:\$controller}, ${2:\$arr})$0'

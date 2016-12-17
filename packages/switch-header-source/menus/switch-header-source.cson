@@ -1,0 +1,17 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {label: 'Switch header/source', command: 'switch-header-source:switch'}
+  ]
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Switch header/source'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'switch-header-source:switch' }
+      ]
+    ]
+  }
+]

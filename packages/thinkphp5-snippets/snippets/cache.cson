@@ -1,0 +1,17 @@
+'.source.php':
+# 缓存
+  '初始化缓存':
+    'prefix': 'Cac'
+    'body': 'Cache::connect(${1:\$options})$0'
+  '设置缓存':
+    'prefix': 'Cas'
+    'body': 'Cache::set(${1:\$name}, ${2:\$value}${3:, ${4:\$time}})$0'
+  '获取缓存':
+    'prefix': 'Cag'
+    'body': 'Cache::get(${1:\$name})$0'
+  '删除缓存':
+    'prefix': 'Car'
+    'body': 'Cache::rm(${1:\$name})$0'
+  '清空缓存':
+    'prefix': 'Cacl'
+    'body': 'Cache::clear()$0'

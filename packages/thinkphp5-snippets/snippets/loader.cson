@@ -1,0 +1,17 @@
+'.source.php':
+# Loader
+  '实例化数据库':
+    'prefix': 'Lt'
+    'body': 'Loader::table(${1:\$name}${2:, ${3:\$option}})$0'
+  '实例化模型':
+    'prefix': 'Lm'
+    'body': 'Loader::model(${1:\$name}${2:, ${3:\$layer}})$0'
+  '实例化控制器':
+    'prefix': 'Lc'
+    'body': 'Loader::controller(${1:\$name}${2:, ${3:\$layer}})$0'
+  '调用模块的操作方法':
+    'prefix': 'La'
+    'body': 'Loader::action(${1:\$url}, ${2:\$vars}, ${3:\$layer})$0'
+  '导入类库':
+    'prefix': 'Li'
+    'body': 'Loader::import(${1:\$class}, ${2:\$baseUrl}, ${3:\$ext})$0'

@@ -1,0 +1,17 @@
+'.source.php':
+# Config
+  '加载配置文件':
+    'prefix': 'Cl'
+    'body': 'Config::load(${1:\$pathFile})$0'
+  '加载其他后缀配置文件':
+    'prefix': 'Cp'
+    'body': 'Config::parse(${1:\$pathFile}, ${2:\$ext})$0'
+  '判断配置项是否存在':
+    'prefix': 'Ch'
+    'body': 'Config::has(${1:\$name})$0'
+  '获取配置':
+    'prefix': 'Cg'
+    'body': 'Config::get(${1:\$name}${2:, ${3:\$range}})$0'
+  '设置配置':
+    'prefix': 'Cs'
+    'body': 'Config::set(${1:\$name}, ${2:\$value}${3:, ${4:\$range}})$0'

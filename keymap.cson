@@ -1,0 +1,53 @@
+# Your keymap
+#
+# Atom keymaps work similarly to style sheets. Just as style sheets use
+# selectors to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts. Unlike style sheets however,
+# each selector can only be declared once.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# 'atom-text-editor':
+#   'enter': 'editor:newline'
+#
+# 'atom-workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/using-atom-basic-customization#customizing-key-bindings
+# * https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+'atom-text-editor':
+    'alt-/': 'autocomplete-plus:activate'
+
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'ctrl-e': 'emmet:expand-abbreviation'
+
+ #实时浏览器调用快捷键
+ 'atom-text-editor':
+  'ctrl-F12':'atom-html-preview:toggle'
+'atom-workspace':
+  'ctrl-alt-l': 'iex:open'
+  'ctrl-alt-l down': 'iex:open-split-down'
+  'ctrl-alt-l up': 'iex:open-split-up'
+  'ctrl-alt-l left': 'iex:open-split-left'
+  'ctrl-alt-l right': 'iex:open-split-right'
+  'ctrl-alt-e': 'iex:reset'
+  'ctrl-alt-a': 'iex:run-all-tests'
+  'ctrl-alt-p': 'iex:pretty-print'
+
+'.editor':
+  'ctrl-alt-h': 'iex:help'
+  'ctrl-alt-o': 'iex:gotoDefinition'
+  'ctrl-alt-x': 'iex:run-tests'
+  'ctrl-alt-j': 'iex:run-test'
+  'ctrl-alt-b': 'iex:pipe'

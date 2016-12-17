@@ -1,0 +1,100 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+        "spec": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-22859-1lhl51d"
+    ]
+  ],
+  "_from": "../d-1161117-22859-12fs74i/package.tgz",
+  "_id": "atom-csscomb@2.0.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-csscomb",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+    "spec": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-22859-12fs74i/package.tgz",
+  "_shasum": "89821e0449bab594cb12a5a806961f1c40add04c",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-22859-12fs74i/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-22859-1lhl51d",
+  "activationCommands": {
+    "atom-workspace": [
+      "atom-csscomb:execute"
+    ]
+  },
+  "author": {
+    "name": "1000ch",
+    "email": "shogo.sensui@gmail.com",
+    "url": "http://github.com/1000ch"
+  },
+  "bugs": {
+    "url": "https://github.com/1000ch/atom-csscomb/issues"
+  },
+  "configSchema": {
+    "presetConfig": {
+      "title": "Configure with preset",
+      "description": "Select preset config bundled with CSSComb.",
+      "type": "string",
+      "default": "csscomb",
+      "enum": [
+        "recommend",
+        "csscomb",
+        "zen",
+        "yandex"
+      ]
+    },
+    "extendPreset": {
+      "title": "Extend preset",
+      "description": "Extend selected preset config with project config if exists.",
+      "type": "boolean",
+      "default": false
+    },
+    "executeOnSave": {
+      "title": "Execute on Save",
+      "description": "Execute sorting CSS property on save.",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^8.0.0",
+    "csscomb": "^3.1.8"
+  },
+  "description": "Sort CSS properties with CSSComb.",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/1000ch/atom-csscomb#readme",
+  "license": "MIT",
+  "name": "atom-csscomb",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# [atom-csscomb](https://atom.io/packages/atom-csscomb) [![Dependency Status](https://david-dm.org/1000ch/atom-csscomb.svg)](https://david-dm.org/1000ch/atom-csscomb)\n\nSort CSS properties with [CSSComb](https://github.com/csscomb/csscomb.js).\n\n![demo](https://raw.githubusercontent.com/1000ch/atom-csscomb/master/demo.gif)\n\n## Installation\n\n```bash\n$ apm install atom-csscomb\n```\n\n## Usage\n\n- Press `ctrl + alt + c`\n- `Packages` > `CSSComb` > `Sort properties`\n- Right Click > `Sort properties`\n\nSelected text will be sorted if there is selection.\n\n## Configuration\n\nTo configure with [`.csscomb.json`](https://github.com/csscomb/csscomb.js/blob/master/doc/options.md), just put it to workspace.\n\n### Preset config\n\nTo configure with presets (`recommend`, `csscomb`, `zen`, `yandex`), check this. [`recommend`](./recommend.json) is created originally by me.\n\n### Extend preset\n\nExtend selected preset config with project config if exists.\n\n### Execute on Save\n\nIf you want to apply sort when you save, check it on.\n\n## License\n\nMIT: http://1000ch.mit-license.org\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1000ch/atom-csscomb.git"
+  },
+  "version": "2.0.4"
+}

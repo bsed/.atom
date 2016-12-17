@@ -1,0 +1,42 @@
+'.source.php':
+# 查询构造器
+  '查询一条数据':
+    'prefix': 'Dnf'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->find()$0'
+  '查询数据集':
+    'prefix': 'Dns'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->select()$0'
+  '查询字段值':
+    'prefix': 'Dnv'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->value(${3:\$name})$0'
+  '查询列字段值':
+    'prefix': 'Dnc'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->column(${3:\$name})$0'
+  '添加数据':
+    'prefix': 'Dni'
+    'body': 'Db::name(\'${1:tableName}\')->insert(${2:\$data})$0'
+  '添加多条数据':
+    'prefix': 'DniA'
+    'body': 'Db::name(\'${1:tableName}\')->insertAll(${2:\$data})$0'
+  '更新数据':
+    'prefix': 'Dnu'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->update(${3:\$data})$0'
+  '更新字段值':
+    'prefix': 'DnsF'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->setField(${3:\$name}, ${4:\$value})$0'
+  '自增字段值':
+    'prefix': 'DnsI'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->setInc(${3:\$name}, ${4:\$score})$0'
+  '自减字段值':
+    'prefix': 'DnsD'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->setDec(${3:\$name}, ${4:\$score})$0'
+  '删除数据':
+    'prefix': 'Dnd'
+    'body': 'Db::name(\'${1:tableName}\')->where(${2:\$map})->delete()$0'
+  '自动事务处理':
+    'prefix': 'Dtr'
+    'body': '''
+Db::transaction(function(){
+    $0
+});
+    '''

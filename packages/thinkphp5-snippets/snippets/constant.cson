@@ -1,0 +1,157 @@
+'.source.php':
+# 预定义常量
+  '类库文件后缀':
+    'prefix': 'EXT'
+    'body': 'EXT'
+  '框架版本号':
+    'prefix': 'THINK_VERSION'
+    'body': 'THINK_VERSION'
+# 路径常量
+  '框架系统目录':
+    'prefix': 'THINK_PATH'
+    'body': 'THINK_PATH'
+  '应用目录':
+    'prefix': 'APP_PATH'
+    'body': 'APP_PATH'
+  '系统类库目录':
+    'prefix': 'LIB_PATH'
+    'body': 'LIB_PATH'
+  '系统核心类库目录':
+    'prefix': 'CORE_PATH'
+    'body': 'CORE_PATH'
+  '系统应用模式目录':
+    'prefix': 'MODE_PATH'
+    'body': 'MODE_PATH'
+  '系统 trait 目录':
+    'prefix': 'TRAIT_PATH'
+    'body': 'TRAIT_PATH'
+  '公共模块名称':
+    'prefix': 'COMMON_MODULE'
+    'body': 'COMMON_MODULE'
+  '扩展类库目录':
+    'prefix': 'EXTEND_PATH'
+    'body': 'EXTEND_PATH'
+  '第三方类库目录':
+    'prefix': 'VENDOR_PATH'
+    'body': 'VENDOR_PATH'
+  '应用运行时目录':
+    'prefix': 'RUNTIME_PATH'
+    'body': 'RUNTIME_PATH'
+  '公共语言包目录':
+    'prefix': 'LANG_PATH'
+    'body': 'LANG_PATH'
+  '项目模板缓存目录':
+    'prefix': 'CACHE_PATH'
+    'body': 'CACHE_PATH'
+  '应用缓存目录':
+    'prefix': 'TEMP_PATH'
+    'body': 'TEMP_PATH'
+  '插件控制器目录':
+    'prefix': 'ADDON_PATH'
+    'body': 'ADDON_PATH'
+# 系统常量
+  '默认模型层的名称':
+    'prefix': 'MODEL_LAYER'
+    'body': 'MODEL_LAYER'
+  '默认控制器层的名称':
+    'prefix': 'CONTROLLER_LAYER'
+    'body': 'CONTROLLER_LAYER'
+  '默认视图层的名称':
+    'prefix': 'VIEW_LAYER'
+    'body': 'VIEW_LAYER'
+  '应用的根命名空间名称':
+    'prefix': 'APP_NAMESPACE'
+    'body': 'APP_NAMESPACE'
+  '是否自动执行应用':
+    'prefix': 'APP_AUTO_RUN'
+    'body': 'APP_AUTO_RUN'
+  '是否允许路由':
+    'prefix': 'APP_ROUTE_ON'
+    'body': 'APP_ROUTE_ON'
+  '是否强制使用路由':
+    'prefix': 'APP_ROUTE_MUST'
+    'body': 'APP_ROUTE_MUST'
+  '是否属于 API 模式':
+    'prefix': 'IS_API'
+    'body': 'IS_API'
+  '是否属于 CGI 模式':
+    'prefix': 'IS_CGI'
+    'body': 'IS_CGI'
+  '是否属于 Windows 环境':
+    'prefix': 'IS_WIN'
+    'body': 'IS_WIN'
+  '是否属于命令行模式':
+    'prefix': 'IS_CLI'
+    'body': 'IS_CLI'
+  '当前的PATH_INFO字符串':
+    'prefix': '__INFO__'
+    'body': '__INFO__'
+  '当前URL地址的扩展名':
+    'prefix': '__EXT__'
+    'body': '__EXT__'
+  '当前模块名':
+    'prefix': 'MODULE_NAME'
+    'body': 'MODULE_NAME'
+  '当前模块路径':
+    'prefix': 'MODULE_PATH'
+    'body': 'MODULE_PATH'
+  '当前控制器名':
+    'prefix': 'CONTROLLER_NAME'
+    'body': 'CONTROLLER_NAME'
+  '当前操作名':
+    'prefix': 'ACTION_NAME'
+    'body': 'ACTION_NAME'
+  '多模块支持':
+    'prefix': 'APP_MULTI_MODULE'
+    'body': 'APP_MULTI_MODULE'
+  '是否开启调试模式':
+    'prefix': 'APP_DEBUG'
+    'body': 'APP_DEBUG'
+  '是否开启Hook':
+    'prefix': 'APP_HOOK'
+    'body': 'APP_HOOK'
+  '是否开启Hook':
+    'prefix': 'APP_MODE'
+    'body': 'APP_MODE'
+  '当前应用模式名称':
+    'prefix': 'THEME_NAME'
+    'body': 'THEME_NAME'
+  '当前模板主题路径':
+    'prefix': 'THEME_PATH'
+    'body': 'THEME_PATH'
+  '当前浏览器语言':
+    'prefix': 'LANG_SET'
+    'body': 'LANG_SET'
+  '开始运行时间（时间戳）':
+    'prefix': 'START_TIME'
+    'body': 'START_TIME'
+  '当前请求时间（时间戳）':
+    'prefix': 'NOW_TIME'
+    'body': 'NOW_TIME'
+  '开始运行时候的内存占用':
+    'prefix': 'START_MEM'
+    'body': 'START_MEM'
+  '当前请求类型':
+    'prefix': 'REQUEST_METHOD'
+    'body': 'REQUEST_METHOD'
+  '当前是否 GET 请求':
+    'prefix': 'IS_GET'
+    'body': 'IS_GET'
+  '当前是否 POST 请求':
+    'prefix': 'IS_POST'
+    'body': 'IS_POST'
+  '当前是否 PUT 请求':
+    'prefix': 'IS_PUT'
+    'body': 'IS_PUT'
+  '当前是否 DELETE 请求':
+    'prefix': 'IS_DELETE'
+    'body': 'IS_DELETE'
+  '当前是否 AJAX 请求':
+    'prefix': 'IS_AJAX'
+    'body': 'IS_AJAX'
+  '环境变量配置前缀':
+    'prefix': 'ENV_PREFIX'
+    'body': 'ENV_PREFIX'
+  '用于改变全局视图目录':
+    'prefix': 'TMPL_PATH'
+    'body': 'TMPL_PATH'

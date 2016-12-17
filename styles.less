@@ -1,0 +1,122 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+// style the background color of the tree view
+@sapporo_cycling_road: 'http://media-cache-ec0.pinimg.com/originals/39/8a/ff/398aff8e6dcea2befe58f09480857a4b.jpg';
+@hokkaido_jingu_mae_doori: 'http://media-cache-ec0.pinimg.com/originals/53/0b/1d/530b1dddb1d525b34c36ea37e305b6b0.jpg';
+
+
+.tree-view {
+    //background-color: whitesmoke;
+    font-size: 16px;
+}
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+    // color: white;
+    // background-color: hsl(180, 24%, 12%);
+    font-family: "Consolas";
+    font-size: 18px;
+}
+// 设置菜单的字体太小
+
+.settings-view {
+    font-size: 16px;
+}
+// 文件标题的字体太小
+.tab-bar .tab .title {
+    font-size: 14px;
+}
+// To style other content in the text editor's shadow DOM, use the ::shadow expression
+atom-text-editor::shadow .cursor {
+    // border-color: red;
+}
+// 隐藏缩进指示线（中间的白线）
+
+atom-text-editor::shadow .wrap-guide {
+    visibility: hidden;
+}
+// 标签 /括号的高亮样式（默认的底部虚线不明显）
+
+atom-text-editor::shadow .bracket-matcher .region {
+    border-bottom: 1px solid lime;
+    position: absolute;
+    border: 1px dashed rgba(222, 255, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.markdown-preview {
+    font-family: sans-serif, '文泉驿正黑' !important;
+}
+
+autocomplete-suggestion-list {
+    .icon {
+        line-height: 1.5em;
+    }
+
+    &.select-list.popover-list ol.list-group li {
+        line-height: 1.5em;
+    }
+}
+// git commit styles
+.editor .git-commit.line-too-long.deprecated {
+    color: orange;
+    text-decoration: none;
+}
+
+.editor .git-commit.line-too-long.illegal {
+    color: #fff;
+    background: #DA2C43;
+    opacity: 0.9;
+}
+
+.pane:before {
+    content: "";
+    background: url("@hokkaido_jingu_mae_doori") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.editor:before {
+    content: "";
+    background: url("@sapporo_cycling_road") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.20;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.comment {
+    color: yellow;
+    opacity: 0.8;
+}
+
+.editor {
+    .cursor {
+        border-color: pink;
+        border-width: 2px;
+    }
+
+    .selection .region {
+        background-color: pink;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,17 @@
+'.source.php':
+# Cookie
+  '初始化 Cookie':
+    'prefix': 'Coi'
+    'body': 'Cookie::init(${1:\$options})$0'
+  '设置 Cookie':
+    'prefix': 'Cos'
+    'body': 'Cookie::set(${1:$name}, ${2:$value}, ${3:$setting})$0'
+  '获取 Cookie':
+    'prefix': 'Cog'
+    'body': 'Cookie::get(${1:$name})$0'
+  '删除 Cookie':
+    'prefix': 'Cod'
+    'body': 'Cookie::rm(${1:$name})$0'
+  '清空 Cookie':
+    'prefix': 'Cocl'
+    'body': 'Cookie::clear()$0'

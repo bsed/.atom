@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-31442-lw802c/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-31442-lw802c/package.tgz",
+        "spec": "/tmp/d-1161117-31442-lw802c/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-31442-1lro3g2"
+    ]
+  ],
+  "_from": "../d-1161117-31442-lw802c/package.tgz",
+  "_id": "go-signature-statusbar@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/go-signature-statusbar",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-31442-lw802c/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-31442-lw802c/package.tgz",
+    "spec": "/tmp/d-1161117-31442-lw802c/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-31442-lw802c/package.tgz",
+  "_shasum": "d9825917ef270e35b639960a5660e69eb8efce21",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-31442-lw802c/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-31442-1lro3g2",
+  "bugs": {
+    "url": "https://github.com/wndhydrnt/go-signature-statusbar/issues"
+  },
+  "configSchema": {
+    "format": {
+      "type": "string",
+      "default": "%F%A %R",
+      "description": "Format of the signature in the status bar, where %F is the name of the function, %A its argument(s) and %R the returned type(s)"
+    },
+    "width": {
+      "type": "string",
+      "default": "20vw",
+      "description": "Width of the element in the status bar"
+    }
+  },
+  "consumedServices": {
+    "go-config": {
+      "versions": {
+        "^1.0.0": "consumeGoconfig"
+      }
+    },
+    "go-get": {
+      "versions": {
+        "^1.0.0": "consumeGoget"
+      }
+    },
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "description": "Display the signature of the current Go function under cursor in the status bar",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/wndhydrnt/go-signature-statusbar#readme",
+  "keywords": [
+    "go",
+    "golang",
+    "go-plus",
+    "function",
+    "signature",
+    "statusbar"
+  ],
+  "license": "MIT",
+  "main": "./lib/go-signature-statusbar",
+  "name": "go-signature-statusbar",
+  "optionalDependencies": {},
+  "package-deps": [
+    "go-config",
+    "go-get"
+  ],
+  "readme": "# go-signature-statusbar package\n\nDisplay the signature of the current Go function under cursor in the status bar.\n\n![go-signature-statusbar](https://raw.githubusercontent.com/wndhydrnt/go-signature-statusbar/master/go-signature-statusbar.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wndhydrnt/go-signature-statusbar.git"
+  },
+  "version": "1.1.0"
+}

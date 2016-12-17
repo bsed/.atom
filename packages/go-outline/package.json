@@ -1,0 +1,77 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-31442-17guer1/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-31442-17guer1/package.tgz",
+        "spec": "/tmp/d-1161117-31442-17guer1/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-31442-1hoe6d6"
+    ]
+  ],
+  "_from": "../d-1161117-31442-17guer1/package.tgz",
+  "_id": "go-outline@0.6.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/go-outline",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-31442-17guer1/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-31442-17guer1/package.tgz",
+    "spec": "/tmp/d-1161117-31442-17guer1/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-31442-17guer1/package.tgz",
+  "_shasum": "911bc49f47a2dfe2e28f720f379233800c88962d",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-31442-17guer1/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-31442-1hoe6d6",
+  "activationCommands": {
+    "atom-workspace": "go-outline:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/frairon/go-outline/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0",
+    "atom-utils": ">=0.9.2",
+    "d3": "3.5.17",
+    "event-kit": "^1.0.0",
+    "pathwatcher": "^6.5.0",
+    "q": "^1.0.1",
+    "underscore-plus": "^1.0.0",
+    "underscore.string": "*"
+  },
+  "description": "Displays an outline of symbols for Golang",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/frairon/go-outline#readme",
+  "keywords": [
+    "go",
+    "golang",
+    "outline"
+  ],
+  "license": "MIT",
+  "main": "./lib/go-outline",
+  "name": "go-outline",
+  "optionalDependencies": {},
+  "readme": "# [Go Outline](https://atom.io/packages/go-outline) [![Build Status](https://travis-ci.org/frairon/go-outline.svg?branch=master)](https://travis-ci.org/frairon/go-outline)\nSimple outline for golang files.\n\n![Go Outline Screenshot](https://github.com/frairon/go-outline/blob/master/resources/screenshot.png?raw=true)\n\n\nIt shows all following symbols contained in the whole package:\n* global variables/constants\n* global functions\n* types, interfaces\n* functions with receivers\n\nIf a file changes, the tree will be updated.\n\nYou need `go-outline-parser` on your `$PATH`.\n\nHaving set `$GOPATH`, then this will do:\n```\ngo get github.com/frairon/go-outline-parser\n```\n\n## Usage\n* `go-outline:toggle` [ctrl-alt-o] -> activates the outline\n* `go-outline:focus-filter` [ctrl-shift-E] -> jumps directly in the filter input\n\nIn the filter input:\n* `ESC`  clears the filter\n* `Enter` jumps to the first filtered item\n\n## Contributing\n\nBug reports, Issues and PRs are always welcome!\n\n## License\n\n[MIT License](http://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/frairon/go-outline/blob/master/LICENSE) for more details.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frairon/go-outline.git"
+  },
+  "version": "0.6.2"
+}

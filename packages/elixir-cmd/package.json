@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+        "spec": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-1161117-27142-1xavpy3"
+    ]
+  ],
+  "_from": "../d-1161117-27142-1gtky2y/package.tgz",
+  "_id": "elixir-cmd@0.2.9",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/elixir-cmd",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+    "spec": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161117-27142-1gtky2y/package.tgz",
+  "_shasum": "3a23d4721171cf083c6728ae3649fa989ab0083c",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-1161117-27142-1gtky2y/package.tgz",
+  "_where": "/tmp/apm-install-dir-1161117-27142-1xavpy3",
+  "bugs": {
+    "url": "https://github.com/jerp/elixir-cmd/issues"
+  },
+  "dependencies": {
+    "ansi-to-html": ">0.1.0",
+    "atom-space-pen-views": "^2.0.3"
+  },
+  "description": "Elixir Commands integration with atom.io",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/jerp/elixir-cmd#readme",
+  "license": "MIT",
+  "main": "./lib/elixir-cmd",
+  "name": "elixir-cmd",
+  "optionalDependencies": {},
+  "readme": "# Elixir Commands integration with atom.io\n\n* mix compile\n* mix test\n* module and function help (project must compile)\n\n![A screenshot the package](https://raw.githubusercontent.com/jerp/elixir-cmd/master/elixi-cmd.gif)\n\nit is active when the project has a mix file in its root directory\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerp/elixir-cmd.git"
+  },
+  "version": "0.2.9"
+}
