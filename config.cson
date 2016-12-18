@@ -119,7 +119,7 @@
       'Micro Hei Mono','DejaVu Sans Mono', '文泉驿正黑'
       
     '''
-    fontSize: 19
+    fontSize: 21
     invisibles:
       cr: "1"
     showIndentGuide: true
